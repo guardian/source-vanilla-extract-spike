@@ -1,10 +1,8 @@
 import path from "path"
 
 import { defineConfig } from "vite"
-import dts from "vite-dts"
+// import dts from "vite-dts"
 import { vanillaExtractPlugin } from "@vanilla-extract/vite-plugin"
-
-const isExternal = (id: string) => !id.startsWith(".") && !path.isAbsolute(id)
 
 export default defineConfig(() => ({
   esbuild: {
@@ -16,8 +14,8 @@ export default defineConfig(() => ({
       formats: ["es"],
     },
     rollupOptions: {
-      external: isExternal,
+      external: ["react", "react-dom", "@vanilla-extract/css"],
     },
   },
-  plugins: [dts(), vanillaExtractPlugin()],
+  plugins: [vanillaExtractPlugin()],
 }))

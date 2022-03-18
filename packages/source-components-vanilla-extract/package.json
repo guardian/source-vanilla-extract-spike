@@ -1,12 +1,12 @@
 {
-  "name": "@guardian/source-components-vanilla-extract",
+  "name": "@guardian/source-components-vanilla-extract-spike",
   "version": "0.0.1",
   "description": "Source components with a touch of vanilla extract 👌",
-  "main": "dist/source-components-vanilla-extract.es.js",
-  "module": "dist/source-components-vanilla-extract.es.js",
+  "main": "dist/source-components-vanilla-extract-spike.es.js",
+  "module": "dist/source-components-vanilla-extract-spike.es.js",
   "scripts": {
     "build": "vite build",
     "build:watch": "vite build --watch"
   },
-  "types": "./src/source-components-vanilla-extract.d.ts"
+  "types": "./src/source-components-vanilla-extract-spike.d.ts"
 }

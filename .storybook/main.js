@@ -14,23 +14,4 @@ module.exports = {
     // return the customized config
     return config
   },
-  // webpackFinal: async (config, { configType }) => {
-  //   config.plugins.push(new VanillaExtractPlugin())
-  //   config.plugins.push(new MiniCssExtractPlugin())
-
-  //   config.module.rules.push({
-  //     test: /\.vanilla\.css$/i,
-  //     use: [
-  //       MiniCssExtractPlugin.loader,
-  //       {
-  //         loader: require.resolve("css-loader"),
-  //         options: {
-  //           url: false,
-  //         },
-  //       },
-  //     ],
-  //   })
-
-  //   return config
-  // },
 }
