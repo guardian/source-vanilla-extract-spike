@@ -2,6 +2,7 @@ import path from "path"
 
 import { defineConfig } from "vite"
 import dts from "vite-dts"
+import { vanillaExtractPlugin } from "@vanilla-extract/vite-plugin"
 
 const isExternal = (id: string) => !id.startsWith(".") && !path.isAbsolute(id)
 
@@ -18,5 +19,5 @@ export default defineConfig(() => ({
       external: isExternal,
     },
   },
-  plugins: [dts()],
+  plugins: [dts(), vanillaExtractPlugin()],
 }))
